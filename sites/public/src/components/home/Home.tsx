@@ -11,6 +11,9 @@ import { MetaTags } from "../../components/shared/MetaTags"
 import MaxWidthLayout from "../../layouts/max-width"
 import styles from "./Home.module.scss"
 
+// ✅ IMPORT your Chatbox here!
+import Chatbox from "../../components/chatbot/Chatbox"
+
 interface HomeProps {
   jurisdiction: Jurisdiction
 }
@@ -27,7 +30,6 @@ export const Home = (props: HomeProps) => {
   }, [profile])
 
   const heroTitle = `${t("welcome.title")} ${t("region.name")}`
-
   const metaDescription = t("pageDescription.welcome", { regionName: t("region.name") })
 
   return (
@@ -100,6 +102,9 @@ export const Home = (props: HomeProps) => {
         </MaxWidthLayout>
         <ConfirmationModal />
       </div>
+
+      {/* ✅ ADD Chatbox here */}
+      <Chatbox />
     </Layout>
   )
 }

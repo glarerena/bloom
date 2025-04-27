@@ -40,7 +40,7 @@ After installing the extension, ⌘⇧P Open User Settings (JSON), and add the f
     "**/*.less",
     "node_modules/@bloom-housing/ui-seeds/src/**/*.scss"
   ]
-  ```
+```
 
 ## Tests
 
