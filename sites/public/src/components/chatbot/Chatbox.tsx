@@ -105,7 +105,7 @@ export default function ChatBox() {
                 if (e.key === "Enter" || e.key === " ") toggleMinimize()
               }}
             >
-              <img src="/purple_house.png" alt="Minimize chat" />
+              <img src="/images/purple_house.png" alt="Minimize chat" />
             </button>
           </div>
 
@@ -184,7 +184,7 @@ export default function ChatBox() {
           onClick={toggleMinimize}
           aria-label="Open chat"
         >
-          <img src="/purple_house.png" alt="Open chat" className={styles.fabImage} />
+          <img src="/images/purple_house.png" alt="Open chat" className={styles.fabImage} />
         </button>
       )}
     </div>
